@@ -1,0 +1,31 @@
+# Dependencies
+markdown:         kramdown
+
+exclude:  ['/bower_components','/node_modules','/test','bower.json','CNAME','Gruntfile.js','LICENSE','package.json','README.md','Gemfile','config.rb']
+keep_files: ['asserts']
+source: source
+destination: dist
+
+# Server
+host:             0.0.0.0
+port:             9000
+url:              http://www.unclezheng.com
+encoding:         UTF-8
+
+production: false
+# production: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      top_nav: 
+        file_name: top_nav_1
+        class: has-bg
+        right_icon: true
+        icon_class: mdi-action-home
+        right_url: index.html
+        left_icon: true
