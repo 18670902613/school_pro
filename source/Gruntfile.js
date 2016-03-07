@@ -164,7 +164,7 @@ module.exports = function(grunt) {
                     cwd: '<%= config.app %>',
                     dest: '<%= config.dist %>',
                     src: [
-                        'images/{,*/}*.*',
+                        'images/{,*/}*.*'
                     ]
                 }]
             }
@@ -186,7 +186,8 @@ module.exports = function(grunt) {
 
                 mainFiles: {
                     'font-awesome': ['css/font-awesome.css'],
-                    'bootstrap': ['dist/css/bootstrap.css', 'dist/js/bootstrap.js']
+                    'bootstrap': ['dist/css/bootstrap.css', 'dist/js/bootstrap.js'],
+                    'jssor-slider': ['js/jssor.slider.mini.js']
                 }
             }
         },

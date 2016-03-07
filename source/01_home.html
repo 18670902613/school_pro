@@ -1,43 +1,82 @@
 ---
 title: 01_首页
 slug: 01_home
-top_nav: false
+top_nav: true
 foot_nav: true
 ---
 
-<div class="hh-02-home">
-	<!-- 头部 开始 -->
-	<header class="header white-text" role="banner">
-
-		<div class="logo-name">
-			<div class="pull-left logo">LOGO</div>
-			<div class="pull-right hh-font-size-16 text">菜单按钮</div>
-		</div>
-
-		<div class="ad-pic">
-			<div class="w4-h3">
-				<ul class="pic">
-				
-				</ul>
-			</div>
-		</div>
-
-
-	</header>
-	<!-- 头部 结束 -->
-
-	<!-- 导航 开始 -->
-
-	<!-- 导航 结束 -->
-
-	<!-- 产品展示 开始 -->
-	<section class="hh-line-list-bg" role="group">
-		<div class="hh-home-title clearfix">
-			<h4 class="pull-left hh-font-size-16">产品分类</h4>
-		</div>
-	
-	</section>
-	<!-- 产品展示 结束 -->
-
-
+<div class="m-home">
+	<article id="container" class="container">
+        <nav id="menu-left" class="menu-left">
+            <ul>
+                {% for item in site.data.01_home.nav_list %}
+                    <li class="active"><a href="#home">{{ item.text }}</a><i class="fa fa-chevron-right"></i></li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div class="content-right" id="content-right">
+            <header>
+                <a class="navicon" href="#menu-left" id="navicon"><i class="fa fa-bars"></i></a>
+                <h1>长郡中学</h1>
+            </header>
+            <section>
+                <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width:640px; max-width: 640px; min-width:300px; height: 300px; overflow: hidden; visibility: hidden;">
+                    <!-- Loading Screen -->
+                    <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                        <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                        <div style="position:absolute;display:block;background:url('asserts/images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                    </div>
+                    <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width:640px; max-width: 640px; min-width:300px; height: 300px; overflow: hidden;">
+                        <div data-p="112.50" style="display: none;">
+                            <img data-u="image" src="asserts/images/landscape/01.jpg" />
+                        </div>
+                        <div data-p="112.50" style="display: none;">
+                            <img data-u="image" src="asserts/images/landscape/02.jpg" />
+                        </div>
+                        <div data-p="112.50" style="display: none;">
+                            <img data-u="image" src="asserts/images/landscape/03.jpg" />
+                        </div>
+                        <div data-p="112.50" style="display: none;">
+                            <img data-u="image" src="asserts/images/landscape/04.jpg" />
+                        </div>
+                    </div>
+                    <!-- Bullet Navigator -->
+                    <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
+                        <div data-u="prototype" style="width:12px;height:12px;"></div>
+                    </div>
+                    <!-- Arrow Navigator -->
+                    <span data-u="arrowleft" class="jssora05l" style="top:0px;left:8px;width:40px;height:40px;" data-autocenter="2"></span>
+                    <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+                    <a href="#" style="display:none">Bootstrap Carousel</a>
+                </div>
+            </section>
+            <section>
+                <div class="home-nav">
+                    <ul>
+                        {% for item in site.data.01_home.home_nav %}
+                        <li>
+                            <div class="hex">
+                                <a href="#"><i class="fa  {{ item.icon }}"></i></a>
+                            </div>
+                            <p>{{ item.text }}</p>
+                        </li>
+                        {% endfor %}
+            
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </section>
+            
+            <footer>
+                <ul>
+                    {% for item in site.data.01_home.footer %}
+                    <li>
+                        <a href="#"><i class="fa {{ item.icon }}"></i><p>{{ item.text }}</p></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </footer>
+            
+        </div>
+    </article>
 </div>

@@ -1,0 +1,210 @@
+html,
+body {
+    overflow: hidden;
+
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    min-width: 300px;
+    max-width: 640px;
+    height: 100%;
+    #main {
+        width: 100%;
+        height: 100%;
+        .m-home {
+            height: 100%;
+            .container {
+                position: relative;
+
+                width: 100%;
+                height: 100%;
+
+                background-color: #fff;
+                .menu-left {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    width: 200px;
+                    height: 100%;
+
+                    background-color: #727171;
+                    ul {
+                        padding: 0;
+                        li {
+                            border-bottom: 1px solid #595757;
+                            padding-right: 15px;
+                            padding-left: 20px;
+                            height: 62px;
+
+                            line-height: 62px;
+
+                            color: #fff;
+                            a {
+                                display: inline-block;
+
+                                width: 90%;
+
+                                text-align: left;
+
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                .content-right {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    padding: 0;
+                    width: 100%;
+                    height: 100%;
+
+                    background-color: #fff;
+
+                    transition: left .3s;
+                    header {
+                        position: relative;
+
+                        height: 70px;
+
+                        background: #1bbbbb;
+                        .navicon {
+                            display: block;
+
+                            position: absolute;
+                            top: 24px;
+                            left: 16px;
+
+                            width: 28px;
+                            height: 26px;
+                            i {
+                                font-size: 26px;
+                                line-height: 26px;
+
+                                color: #fff;
+                            }
+                        }
+                        h1 {
+                            margin: 0;
+
+                            font-size: 24px;
+                            line-height: 70px;
+                            text-align: center;
+
+                            color: #fff;
+                        }
+                    }
+                    &.menu-slider {
+                        left: 200px;
+                    }
+                    .home-nav {
+                        background-color: #fff;
+                        ul {
+                            padding: 0;
+                            width: 100%;
+                            li {
+                                float: left;
+
+                                margin-top: 30px;
+                                width: 33.3333333%;
+                                .hex {
+                                    position: relative;
+
+                                    margin: 0 auto;
+                                    margin-top: 30px;
+                                    width: 60px;
+                                    height: 34px;
+
+                                    background: #1bbbbb;
+
+                                    cursor: pointer;
+                                    &:before,
+                                    &:after {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+
+                                        width: 60px;
+                                        height: 34px;
+
+                                        background: #1bbbbb;
+
+                                        content: "";
+
+                                        backface-visibility: hidden;
+                                    }
+                                    &:before {
+                                        transform: rotate(60deg);
+                                    }
+                                    &:after {
+                                        transform: rotate(-60deg);
+                                    }
+                                    a {
+                                        i {
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                            bottom: 0;
+                                            left: 0;
+                                            z-index: 999;
+
+                                            margin: auto;
+
+                                            font-size: 14px;
+                                            line-height: 36px;
+                                            text-align: center;
+
+                                            color: #fff;
+
+                                            transition: all 1S;
+                                        }
+                                    }
+                                }
+                                p {
+                                    margin-top: 20px;
+
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                    footer {
+                        position: absolute;
+                        bottom: 0;
+
+                        width: 100%;
+                        height: 60px;
+
+                        background: #1bbbbb;
+                        ul {
+                            padding: 10px 0 0 0;
+                            li {
+                                float: left;
+
+                                width: 25%;
+                                height: 100%;
+                                a {
+                                    font-size: 12px;
+                                    text-align: center;
+
+                                    color: #fff;
+                                    i {
+                                        display: block;
+
+                                        width: 100%;
+
+                                        font-size: 14px;
+                                        line-height: 30px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+nav_list:
+  - text: 学校动态
+
+  - text: 学校愽文
+
+  - text: 明星学生
+
+  - text: 明星老师
+
+  - text: 活跃班级
+
+  - text: 师生互动
+
+  - text: 学生成绩
+
+  - text: 学校活动
+
+  - text: 宣传栏
+
+home_nav:
+  - text: 学生
+    icon: fa-graduation-cap
+
+  - text: 老师
+    icon: fa-subscript
+    
+  - text: 家长
+    icon: fa-user
+    
+  - text: 微愽
+    icon: fa-weibo
+    
+  - text: 愽文
+    icon: fa-file-text
+    
+  - text: 相册
+    icon: fa-file-image-o
+
+footer:
+  - text: 首页
+    icon: fa-home
+
+  - text: 学生
+    icon: fa-graduation-cap
+    
+  - text: 老师
+    icon: fa-subscript 
+    
+  - text: 家长
+    icon: fa-user
