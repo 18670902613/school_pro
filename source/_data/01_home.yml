@@ -17,6 +17,15 @@ nav_list:
 
   - text: 宣传栏
 
+banner_img:
+  - img_name: 01.jpg
+
+  - img_name: 02.jpg
+
+  - img_name: 03.jpg
+
+  - img_name: 04.jpg
+
 home_nav:
   - text: 学生
     icon: fa-graduation-cap

@@ -1,7 +1,5 @@
 html,
 body {
-    overflow: hidden;
-
     margin: 0 auto;
     padding: 0;
     width: 100%;
@@ -13,6 +11,8 @@ body {
         height: 100%;
         .m-home {
             height: 100%;
+
+            background: #fff;
             .container {
                 position: relative;
 
@@ -21,14 +21,21 @@ body {
 
                 background-color: #fff;
                 .menu-left {
+                    overflow: hidden;
+
                     position: absolute;
                     top: 0;
                     left: 0;
 
-                    width: 200px;
+                    width: 0;
                     height: 100%;
 
                     background-color: #727171;
+
+                    transition: width .3s;
+                    &.slide-right {
+                        width: 200px;
+                    }
                     ul {
                         padding: 0;
                         li {
@@ -102,6 +109,9 @@ body {
                     .home-nav {
                         background-color: #fff;
                         ul {
+                            overflow: hidden;
+
+                            margin-bottom: 60px;
                             padding: 0;
                             width: 100%;
                             li {
@@ -171,7 +181,7 @@ body {
                         }
                     }
                     footer {
-                        position: absolute;
+                        position: fixed;
                         bottom: 0;
 
                         width: 100%;
