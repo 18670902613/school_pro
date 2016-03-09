@@ -6,7 +6,7 @@
     {% include head.html %}
 </head>
 <body>
-    <div id="main">
+    <div id="main" class="{% if page.article_title %}has-title{% endif %}">
         {{ content }}
     </div>
     {% include footer.html %}

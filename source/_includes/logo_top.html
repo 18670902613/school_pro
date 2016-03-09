@@ -1,4 +1,4 @@
-<header>
+<header class="logo-top{% if page.no_title %} no-title{% endif %}">
     {% if page.menu_left %}
     <a class="navicon" href="#menu-left" id="navicon"><i class="fa fa-bars"></i></a>
     {% endif %}
@@ -6,4 +6,7 @@
     <a class="navicon"><i class="fa fa-arrow-left"></i></a>
     {% endif %}
     <h1>长郡中学</h1>
+    {% if page.article_title %}
+    <h3 class="page-title">{{ page.title }}</h3>
+    {% endif %}
 </header>

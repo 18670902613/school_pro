@@ -13,8 +13,10 @@
     min-height: 100%;
 }
 
-html,body {
+html,
+body {
     font-family: Microsoft YaHei, SimSun, Arial;
+
     background-color: #fff;
 }
 
@@ -25,6 +27,7 @@ a {
 a:focus,
 a:hover {
     text-decoration: none;
+    color: #595757;
 }
 
 ul,

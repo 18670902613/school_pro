@@ -1,0 +1,45 @@
+.article-list {
+    padding-bottom: 60px;
+    .list {
+        ul {
+            margin-top: 10px;
+            padding: 0 20px;
+            li {
+                border-bottom: 1px solid #c9cacb;
+                padding-top: 10px;
+                &:active {
+                    background-color: #c9cacb;
+                }
+                i {
+                    float: right;
+
+                    font-size: 24px;
+
+                    color: #1bbbbb;
+                }
+                small {
+                    display: block;
+
+                    width: 95%;
+
+                    text-align: right;
+
+                    color: #1bbbbb;
+                }
+                p {
+                    overflow: hidden;
+
+                    margin-bottom: 0;
+                    width: 80%;
+
+                    font-size: 1px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    word-break: keep-all;
+
+                    color: #727171;
+                }
+            }
+        }
+    }
+}

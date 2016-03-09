@@ -1,7 +1,142 @@
-#main{
-  max-width: 640px;
-  min-width: 320px;
-  margin: 0 auto;
+#main {
+    margin: 0 auto;
+    padding: 0;
+    min-width: 300px;
+    max-width: 640px;
+    height: 100%;
+
+    background: #fff;
+    &.has-title {
+        padding-top: 110px;
+        padding-bottom: 60px;
+    }
+    .container {
+        position: relative;
+
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        header.logo-top {
+            position: fixed;
+            top: 0;
+            z-index: 9999;
+
+            width: 100%;
+            height: 110px;
+
+            background: #fff;
+            &.no-title {
+                height: 70px;
+                position: relative;
+            }
+            .navicon {
+                display: block;
+
+                position: absolute;
+                top: 24px;
+                left: 16px;
+
+                width: 28px;
+                height: 26px;
+                i {
+                    font-size: 20px;
+                    line-height: 26px;
+
+                    color: #fff;
+                }
+            }
+            h1 {
+                margin: 0;
+
+                font-size: 24px;
+                line-height: 71px;
+                text-align: center;
+
+                color: #fff;
+                background: #1bbbbb;
+            }
+        }
+        h3.page-title {
+            margin: 10px 10px 0 10px;
+
+            font-size: 16px;
+            line-height: 30px;
+            text-indent: 10px;
+
+            color: #fff;
+            background-color: #1bbbbb;
+        }
+        footer.foot-nav {
+            position: fixed;
+            bottom: 0;
+
+            width: 100%;
+            height: 60px;
+
+            background: #1bbbbb;
+            ul {
+                padding: 10px 0 0 0;
+                li {
+                    float: left;
+
+                    width: 25%;
+                    height: 100%;
+                    a {
+                        font-size: 12px;
+                        text-align: center;
+
+                        color: #fff;
+                        i {
+                            display: block;
+
+                            width: 100%;
+
+                            font-size: 14px;
+                            line-height: 30px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .menu-left {
+            overflow: hidden;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 0;
+            height: 100%;
+
+            background-color: #727171;
+
+            transition: width .3s;
+            &.slide-right {
+                width: 200px;
+            }
+            ul {
+                padding: 0;
+                li {
+                    border-bottom: 1px solid #595757;
+                    padding-right: 15px;
+                    padding-left: 20px;
+                    height: 62px;
+
+                    line-height: 62px;
+
+                    color: #fff;
+                    a {
+                        display: inline-block;
+
+                        width: 90%;
+
+                        text-align: left;
+
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
 }
-
-

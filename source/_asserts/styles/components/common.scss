@@ -7,7 +7,13 @@
     height: 50px;
 }
 
-
+/* diplay */
+.block {
+    display: block;
+}
+.none {
+    display: none;
+}
 /* float */
 
 .fl {
@@ -227,9 +233,7 @@
     font-weight: bold;
 }
 
-.m-home{
-    margin: 0 auto;
-    padding: 0;
-    min-width: 300px;
-    max-width: 640px;
+/* border */
+.border-n {
+    border: none;
 }
