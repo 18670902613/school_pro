@@ -1,0 +1,34 @@
+---
+title: 发送信息
+slug: 08_msg_send
+menu_left: true
+article_title: true
+---
+
+<div class="msg-send">
+    <article id="container" class="container">
+        {% include menu_left.html %}
+        <div class="content-right" id="content-right">
+            {% include logo_top.html %}
+            <section class="msg-edit">
+                <div class="row mt30">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <span class="col-xs-3 text-right">收信人</span>
+                        <input class="col-xs-7" type="text" placeholder="请输入收信人e号">
+                        <i class="fa fa-plus col-xs-2"></i>
+                    </div>
+                </div>
+                <div class="row mt30">
+                    <textarea class="col-xs-8 col-xs-offset-2" name="" id="" cols="30" rows="13" placeholder="请在这里输入留言..."></textarea>
+                </div>
+                <div class="row">
+                    <p class="text-center">您已经输入<span>0</span>字，还能输入(<span>65</span>)字</p>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-default col-xs-8 col-xs-offset-2 text-center mt20 btn-msg-send">发送</button>
+                </div>
+            </section>
+            {% include foot_nav.html %}
+        </div>
+    </article>
+</div>

@@ -1,5 +1,5 @@
 GEM
-  remote: http://ruby.taobao.org/
+  remote: https://ruby.taobao.org/
   specs:
     blankslate (2.1.2.4)
     celluloid (0.16.0)
@@ -72,4 +72,4 @@ DEPENDENCIES
   wdm (>= 0.1.0)
 
 BUNDLED WITH
-   1.10.6
+   1.11.2

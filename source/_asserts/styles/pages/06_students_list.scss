@@ -1,0 +1,28 @@
+.students-list {
+    .list {
+        margin-top: 120px;
+        margin-bottom: 70px;
+        ul {
+            margin-top: 10px;
+            padding: 0 20px;
+            li {
+                border-bottom: 1px solid #c9cacb;
+                padding: 10px 0;
+                &:active {
+                    background-color: #c9cacb;
+                }
+                small {
+                    color: red;
+                }
+                i {
+                    margin: 0 5px;
+
+                    color: #1bbbbb;
+                }
+                b {
+                    color: green;
+                }
+            }
+        }
+    }
+}

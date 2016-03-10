@@ -1,0 +1,29 @@
+---
+title: 班级列表
+slug: 07_class_list
+menu_left: false
+back_control: true
+article_title: true
+---
+
+<div class="students-list">
+    <article id="container" class="container">
+        <div class="content-right" id="content-right">
+            {% include logo_top.html %}
+            <section class="list">
+                <ul>
+                    {% for item in site.data.07_class_list.list %}
+                    <li>
+                        <a href="#">
+                            <span>{{ item.class_name }}</span>
+                            <input type="checkbox" class="pull-right" name="calss{{ forloop.index }}">
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+            
+            {% include foot_nav.html %}
+        </div>
+    </article>
+</div>
