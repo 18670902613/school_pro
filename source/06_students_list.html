@@ -1,0 +1,36 @@
+---
+title: 学生列表
+slug: 06_students_list
+menu_left: false
+back_control: true
+article_title: true
+---
+
+<div class="students-list">
+    <article id="container" class="container">
+        <div class="content-right" id="content-right">
+            {% include logo_top.html %}
+            <section class="list">
+                <ul>
+                    {% for item in site.data.06_students_list.list %}
+                    <li>
+                        <a href="#">
+                            <span>{{ item.name }}</span>
+                            <i class="fa fa-mobile-phone"></i>
+                            {% if item.wechat %}
+                            <b class="fa fa-wechat"></b>
+                            {% endif %}
+                            <span>[</span>
+                            <small>{{ item.count }}</small>
+                            <span>]</span>
+                            <input type="checkbox" class="pull-right" name="student{{ forloop.index }}">
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+            
+            {% include foot_nav.html %}
+        </div>
+    </article>
+</div>

@@ -6,16 +6,28 @@
     height: 100%;
 
     background: #fff;
-    &.has-title {
-        padding-top: 110px;
-        padding-bottom: 60px;
-    }
     .container {
         position: relative;
 
         padding: 0;
         width: 100%;
         height: 100%;
+        .content-right {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            padding: 0;
+            width: 100%;
+            height: 100%;
+
+            background-color: #fff;
+
+            transition: left .3s;
+            &.menu-slider {
+                left: 200px;
+            }
+        }
         header.logo-top {
             position: fixed;
             top: 0;
@@ -26,8 +38,9 @@
 
             background: #fff;
             &.no-title {
-                height: 70px;
                 position: relative;
+
+                height: 70px;
             }
             .navicon {
                 display: block;

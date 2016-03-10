@@ -207,12 +207,5 @@ jQuery(document).ready(function($) {
     $(window).bind("load", ScaleSlider);
     $(window).bind("resize", ScaleSlider);
     $(window).bind("orientationchange", ScaleSlider);
-    //responsive code end
-
-
-    // menu click
-    $("#navicon").click(function() {
-        $("#menu-left").stop().toggleClass("slide-right");
-        $("#content-right").stop().toggleClass("menu-slider");
-    });
+    //responsive code end    
 });
