@@ -1,0 +1,34 @@
+.change-phone {
+    .container {
+        section {
+            margin-top: 140px;
+            p {
+                strong {
+                    font-size: 16px;
+
+                    color: #595757;
+                }
+            }
+            input {
+                border: 1px solid #1bbbbb;
+                border-radius: 2px;
+                height: 40px;
+
+                color: #c9cacb;
+                &:focus {
+                    color: #595757;
+                }
+            }
+            button {
+                border: none;
+                border-radius: 2px;
+                height: 40px;
+
+                font-size: 14px;
+
+                color: #fff;
+                background: #f9be00;
+            }
+        }
+    }
+}

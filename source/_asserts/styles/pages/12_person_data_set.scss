@@ -44,3 +44,13 @@
         }
     }
 }
+#edit-msg {
+    border: 1px solid #1bbbbb;
+    border-radius: 2px;
+    height: 40px;
+
+    color: #c9cacb;
+    &:focus {
+        color: #595757;
+    }
+}

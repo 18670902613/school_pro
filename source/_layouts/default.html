@@ -9,6 +9,9 @@
     <div id="main">
         {{ content }}
     </div>
+    {% if page.modal_small %}
+        {% include modal_small.html %}
+    {% endif %}
     {% include footer.html %}
 </body>
 

@@ -1,0 +1,51 @@
+.pay-manage {
+    .container {
+        .form-list {
+            margin-top: 130px;
+            p {
+                color: #1bbbbb;
+            }
+            .form-group {
+                margin-bottom: 5px;
+                input {
+                    border: 1px solid #1bbbbb;
+                    border-radius: 2px;
+                    height: 40px;
+
+                    color: #c9cacb;
+                    &:focus {
+                        color: #595757;
+                    }
+                }
+                span,
+                label,
+                input {
+                    line-height: 40px;
+
+                    background: none;
+                }
+                label {
+                    font-weight: normal;
+                }
+                i {
+                    margin: 10px 0 0 -25px;
+
+                    color: #c9cacb;
+                }
+            }
+            button {
+                border: none;
+                border-radius: 2px;
+                height: 40px;
+
+                font-size: 14px;
+
+                color: #fff;
+                background: #f9be00;
+                &.send-code {
+                    background: #1bbbbb;
+                }
+            }
+        }
+    }
+}

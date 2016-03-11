@@ -1,0 +1,21 @@
+.bund-success {
+    .container {
+        section {
+            margin-top: 160px;
+            button {
+                border: none;
+                border-radius: 2px;
+                height: 40px;
+
+                font-size: 14px;
+
+                color: #fff;
+                background: #f9be00;
+                &:active,
+                &:focus {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

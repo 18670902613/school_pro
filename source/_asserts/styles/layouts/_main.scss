@@ -151,9 +151,26 @@
             }
         }
     }
-    .modal-content {
+}
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            margin: 50% auto;
+            border-radius: 2px;
             width: 70%;
-    margin: 50% auto;
-        border-radius: 2px;
+            .modal-header,
+            .modal-footer {
+                border: none;
+            }
+            .modal-footer {
+                button {
+                    border: none;
+
+                    color: #1bbbbb;
+                    background: #fff;
+                }
+            }
+        }
     }
 }

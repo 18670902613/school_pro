@@ -1,0 +1,26 @@
+.bund-status {
+    .container {
+        section {
+            margin-top: 140px;
+            button {
+                border: none;
+                border-radius: 2px;
+                height: 40px;
+
+                font-size: 14px;
+
+                color: #fff;
+                &.family {
+                    background: #1bbbbb;
+                }
+                &.teacher {
+                    background: #f9be00;
+                }
+                &:active,
+                &:focus {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
