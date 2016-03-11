@@ -1,0 +1,37 @@
+---
+title: 个人设置
+slug: 09_person_set
+back_control: true
+article_title: true
+---
+
+<div class="person-set-list">
+    <article id="container" class="container">
+        <div class="content-right" id="content-right">
+            {% include logo_top.html %}
+            <section class="person-msg">
+                <div class="row">
+                    <img src="asserts/images/person_icon.png" alt="用户Logo" class="img-circle">
+                </div>
+                <p>昵称：<span>波菜</span></p>
+                <p>手机号码：<span>18670932415</span></p>
+                <p>用户类型：<span>老师会员</span></p>
+                <p>班级：<span>1608班</span></p>
+            </section>
+            <section class="list">
+                <ul>
+                    {% for item in site.data.09_person_set.set_list %}
+                    <li>
+                        <a href="#">
+                            <span>{{ item.msg_item }}</sapn>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+            
+            {% include foot_nav.html %}
+        </div>
+    </article>
+</div>

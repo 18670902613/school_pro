@@ -1,0 +1,53 @@
+data_list:
+  - key: 昵称：
+    value: 波菜
+
+  - key: 性别：
+    value: <input type="radio" name="sex"/>男<input type="radio" name="sex"/>女
+    edit: false
+
+  - key: 姓名：
+    value: 李东阳
+
+  - key: 出生日期：
+    value: 年/月/日
+
+  - key: 籍贯：
+    value: 波菜
+
+  - key: 信仰：
+    value: 波菜
+
+  - key: 名族：
+    value: 波菜
+
+  - key: 教育程度：
+    value: 波菜
+
+  - key: 教育程度：
+    value: 波菜
+
+  - key: 职业：
+    value: 波菜
+
+  - key: 家庭电话：
+    value: 波菜
+
+  - key: 住址：
+    value: 波菜
+
+  - key: 邮编：
+    value: 波菜
+
+  - key: 身份证号：
+    value: 波菜
+
+  - key: 网址：
+    value: 波菜
+
+  - key: 邮箱：
+    value: 波菜
+
+  - key: QQ：
+    value: 波菜
+

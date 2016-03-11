@@ -1,0 +1,10 @@
+set_list:
+  - msg_item: 我的资料
+
+  - msg_item: 解绑手机
+
+  - msg_item: 修改手机
+
+  - msg_item: 亲情号码
+
+  - msg_item: 切换老师

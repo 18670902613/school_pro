@@ -2,7 +2,7 @@
     <ul>
         {% for item in site.data.01_home.footer %}
         <li>
-            <a href="#"><i class="fa {{ item.icon }}"></i><p>{{ item.text }}</p></a>
+            <a href="{{ item.url }}"><i class="fa {{ item.icon }}"></i><p>{{ item.text }}</p></a>
         </li>
         {% endfor %}
     </ul>

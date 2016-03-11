@@ -1,0 +1,47 @@
+.person-set-list {
+    .person-msg {
+        margin-top: 130px;
+        padding: 0 20px;
+
+        text-align: center;
+        img {
+            border-radius: 50%;
+            width: 60px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 0;
+
+            font-size: 12px;
+            line-height: 20px;
+            text-align: left;
+
+            color: #898989;
+            span {
+                font-size: 14px;
+
+                color: #727171;
+            }
+        }
+    }
+    .list {
+        ul {
+            margin-top: 10px;
+            padding: 0 20px;
+            li {
+                border-bottom: 1px solid #c9cacb;
+                padding: 15px 0 5px 0;
+                &:active {
+                    background-color: #c9cacb;
+                }
+                i {
+                    float: right;
+
+                    font-size: 24px;
+
+                    color: #1bbbbb;
+                }
+            }
+        }
+    }
+}

@@ -48,12 +48,16 @@ home_nav:
 footer:
   - text: 首页
     icon: fa-home
+    url: index.html
 
   - text: 学生
     icon: fa-graduation-cap
+    url: '#'
     
   - text: 老师
-    icon: fa-subscript 
+    icon: fa-subscript
+    url: '#'
     
   - text: 家长
     icon: fa-user
+    url: '#'
