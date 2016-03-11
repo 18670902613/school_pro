@@ -1,0 +1,28 @@
+---
+title: 家长学校
+slug: 19_digital_school
+menu_left: true
+article_title: true
+---
+
+<div class="digital_school">
+    <article id="container" class="container">
+        {% include menu_left.html %}
+        <div class="content-right" id="content-right">
+            {% include logo_top.html %}
+            <section class="list">
+                <ul>
+                    {% for item in site.data.19_digital_school.sub_list %}
+                    <li>
+                        <a href="#">
+                            <span>{{ item.sub_option }}</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+            {% include foot_nav.html %}
+        </div>
+    </article>
+</div>

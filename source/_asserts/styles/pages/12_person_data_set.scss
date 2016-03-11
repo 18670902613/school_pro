@@ -41,6 +41,11 @@
 
             color: #fff;
             background: #f9be00;
+            &:active,
+            &:focus {
+                color: #fff;
+                background: #f9be00;
+            }
         }
     }
 }
