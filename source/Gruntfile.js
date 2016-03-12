@@ -187,7 +187,8 @@ module.exports = function(grunt) {
                 mainFiles: {
                     'font-awesome': ['css/font-awesome.css'],
                     'bootstrap': ['dist/css/bootstrap.css', 'dist/js/bootstrap.js'],
-                    'jssor-slider': ['js/jssor.slider.mini.js']
+                    'jssor-slider': ['js/jssor.slider.mini.js'],
+                    'bootstrap-datepicker': ['dist/css/bootstrap-datepicker.min.css','dist/css/bootstrap-datepicker3.min.css', 'dist/js/bootstrap-datepicker.min.js','js/locales/bootstrap-datepicker.zh-CN.js']
                 }
             }
         },

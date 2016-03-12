@@ -29,6 +29,15 @@
 
                         color: #1bbbbb;
                     }
+                    input.datepicker {
+                        border: none;
+
+                        background: none;
+                        &:active,
+                        &:focus {
+                            background: none;
+                        }
+                    }
                 }
             }
         }

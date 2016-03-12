@@ -1,10 +1,18 @@
-.love-num-set {
+.digital-school-pay {
     overflow-x: hidden;
 
     height: 100%;
     .container {
         .form-list {
-            margin-top: 140px;
+            margin-top: 160px;
+            p {
+                text-align: center;
+
+                color: #898989;
+                &.title {
+                    color: #1bbbbb;
+                }
+            }
             .form-group {
                 margin-bottom: 5px;
                 input {
@@ -35,11 +43,6 @@
 
                 color: #fff;
                 background: #f9be00;
-            }
-            i {
-                font-size: 40px;
-
-                color: #1bbbbb;
             }
         }
     }

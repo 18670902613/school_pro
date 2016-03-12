@@ -1,7 +1,4 @@
-.students-list {
-    overflow-x: hidden;
-
-    height: 100%;
+.student-data {
     .list {
         margin-top: 120px;
         margin-bottom: 70px;
@@ -10,20 +7,28 @@
             padding: 0 20px;
             li {
                 border-bottom: 1px solid #c9cacb;
-                padding: 10px 0;
+                padding-top: 10px;
                 &:active {
                     background-color: #c9cacb;
                 }
-                small {
-                    color: red;
-                }
                 i {
-                    margin: 0 5px;
+                    float: right;
+
+                    margin-top: -15px;
+
+                    font-size: 24px;
 
                     color: #1bbbbb;
                 }
-                b {
-                    color: green;
+                small {
+                    padding-right: 10px;
+
+                    color: #727171;
+                }
+                span {
+                    padding-left: 10px;
+
+                    color: #595757;
                 }
             }
         }

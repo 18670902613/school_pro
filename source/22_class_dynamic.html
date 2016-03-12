@@ -1,22 +1,22 @@
 ---
-title: 我的文章
-slug: 01_article_list
+title: 班级动态
+slug: 22_class_dynamic
 back_control: true
 article_title: true
 ---
 
-<div class="article-list">
+<div class="class-dynamic">
     <article id="container" class="container">
         <div class="content-right" id="content-right">
             {% include logo_top.html %}
             <section class="list">
                 <ul>
-                    {% for item in site.data.03_article_list.list %}
+                    {% for item in site.data.22_class_dynamic.list %}
                     <li>
                         <a href="#">
-                            <strong>{{ item.title }}</strong>
-                            <i class="fa fa-angle-right"></i>
-                            <p>{{ item.info }}</p>
+                           
+                           
+                            <p>{{ item.content }}</p>
                             <small>{{ item.time }}</small>
                         </a>
                     </li>

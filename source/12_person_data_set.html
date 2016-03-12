@@ -16,10 +16,15 @@ modal: true
                     {% for item in site.data.12_person_data_set.data_list %}
                     <li class="base-edit">
                         <a href="#">
-                           <strong>{{ item.key }}</strong><span>{{ item.value }}</span>
-                           {% if item.edit != false %}
-                           <i class="fa fa-edit"></i>
-                           {% endif %}
+                            <strong>{{ item.key }}</strong>
+                            {% if item.datepicker %}
+                                <input type="text" class="datepicker" placeholder="{{ item.value }}">
+                            {% else %}
+                                <span>{{ item.value }}</span>
+                            {% endif %}
+                            {% if item.edit != false %}
+                                <i class="fa fa-edit"></i>
+                            {% endif %}
                         </a>
                     </li>
                     {% endfor %}

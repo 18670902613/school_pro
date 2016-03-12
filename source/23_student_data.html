@@ -1,0 +1,37 @@
+---
+title: 学生资料
+slug: 23_student_data
+back_control: true
+article_title: true
+---
+
+<div class="student-data">
+    <article id="container" class="container">
+        <div class="content-right" id="content-right">
+            {% include logo_top.html %}
+            <section class="list">
+                <ul>
+                    {% for item in site.data.23_student_data.list %}
+                    <li>
+                        <a href="#">
+                            <div>
+                                <strong>{{ item.name }}</strong>
+                                <span>{{ item.phone_num }}</span>  
+                            </div>
+                            
+                            <i class="fa fa-angle-right"></i>
+                            <div>
+                                <small>{{ item.id }}</small>
+                                <small>{{ item.sex }}</small>
+                                <small>{{ item.address }}</small>
+                            </div>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+            
+            {% include foot_nav.html %}
+        </div>
+    </article>
+</div>

@@ -174,3 +174,23 @@
         }
     }
 }
+
+.datepicker {
+    .datepicker-days {
+        th {
+            &.datepicker-switch,
+            &.prev,
+            &.next {
+                color: #1bbbbb;
+            }
+        }
+        td {
+            &.active.day {
+                border: none;
+                border-radius: 2px;
+
+                background: #1bbbbb;
+            }
+        }
+    }
+}
